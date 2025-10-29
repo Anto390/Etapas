@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etapas del Proyecto - EcoMove</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #3C8C58;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #E8F5E9;
+      padding: 20px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+      color: #3C8C58;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 25px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    main h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #3C8C58;
+      text-align: center;
+    }
+
+    .etapa {
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #E8F5E9;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .etapa:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(9, 227, 118, 0.2);
+    }
+
+    .etapa h3 {
+      margin-top: 0;
+      color: #3C8C58;
+      font-size: 1.4em;
+    }
+
+    .etapa p {
+      margin: 10px 0 0;
+      font-size: 1em;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  
+
+      <div id="barra">
+    <nav id="nav">
+
+      <div id="logo">
+        <img src="Logo EcoMove sin Fondo.png" style="max-width: 15%; height: auto;" alt="Logo de la organización" />
+      </div>
+      <div id="contenido-dinamico">
+        <ul>
+        <li><a onclick="window.location.href='EcoMove.html'">Inicio</a></li>
+        <li><a onclick="window.location.href='Quienessomos.html'">Quiénes somos</a></li>
+        <li><a onclick="window.location.href='Equipo.html'">Equipo</a></li>
+          <div class="dropdown">
+    <button onclick="toggleDropdown()" class="dropdown-button" id="boton-etapas">Etapas</button>
+    <div id="dropdownMenu" class="dropdown-content">
+      <a href="#">Etapa 1</a>
+      <a href="#">Etapa 2</a>
+      <a href="#">Etapa 3</a>
+      <a href="#">Etapa 4</a>
+      <a href="#">Etapa 5</a>
+    </div>
+    </div>
+        <li><a onclick="window.location.href='Contacto.html'">Contacto</a></li>
+
+        
+    <input type="text" id="busqueda" placeholder="Buscar" />
+    </nav>
+  </div>
+
+  <main>
+    <h2>Etapas del Proyecto</h2>
+
+    <div class="etapa">
+      <h3>1. Identificación de la problemática</h3>
+      <p>El equipo detectó la necesidad de mejorar la calidad de vida de personas con movilidad reducida y de sus cuidadores, especialmente en contextos vulnerables.
+        Se observó que:
+        - Las sillas de ruedas elécticas existentes son costosas y poco accesibles.
+        - El esfuerzo físico de los cuidadores es elevado.
+        - Existe una falta de soluciones sostenibles y accesibles que promuevan la autonomía.
+      </p>
+      
+    </div>
+
+    <div class="etapa">
+      <h3>2. Investigación y análisis de antecedentes</h3>
+      <p>Se realizó una investigación de mercado parra conocer los productos existentes y detectar oportunidades de mejora. 
+        Se analizaron empresas nacionales e internacionales, identificando:
+        Fortalezas: innovación y calidad.
+        Debilidades: altos costos, escasa accesibilidad, poca difusión y escasos puntos de envio. 
+        Esto permitió definir un espacio de innovación para una silla eléctrica económica, práctica y ecológica.
+      </p>
+    </div>
+
+    <div class="etapa">
+      <h3>3. Caracterización del usuaio</h3>
+      <p>Se definió el público objetivo:
+        Personas con movilidad reducida (adultos mayores o personas con discapacidad motriz).
+        Cuidadores, familiares, acompañantes o profesionales de la salud.
+      </p>
+    </div>
+
+    <div class="etapa">
+      <h3>4. Definición de requisitos de diseño</h3>
+      <p>Con base en la invstigación, se determinaron los elementos indispensables del producto:
+        -Bajo costo y  facil uso.
+        -Energía solar, para promover la sustenibilidad.
+        -Control mediante joystick y botones intuitivos.
+        -Diseño compacto y seguro.      </p>
+    </div>
+
+    <div class="etapa">
+      <h3>5. Organización de la producción</h3>
+      <p>Se planificó el proceso productivo son los siguientes pasos:
+        1. Contacto con proveedores y compra de materiales.
+        2. Adquisición de herramientas.
+        3. Asignación de tareas entre los integrantes.
+        4. Producción y control de calidad. 
+        5. Distribución para la venta. 
+        Se elaboró un diagrama de recursos y costos, detalando los insumos adquiridos. 
+      </p>
+    </div>
+
+    <div class="etapa">
+      <h3>6. Diseño de identidad visual</h3>
+      <p>Se creó la imagen corporativa "EcoMove", representando los valores del proyecto:
+        -Inclusión (silla de ruedas)
+        -Sustentabilidad (sol y tonos verdes)
+        -Tecnología limpia (rayo verde)
+        El logo se presentó en versiones a color, escala de grises y distintos tamaños, manteniendo la coherencia visual.
+      </p>
+    </div>
+
+    <div class="etapa">
+      <h3>7. Conclusión y proyección</h3>
+      <p>Se desarrolló un plan de marketing para dar a conocer el producto:
+        EcoMove busca ofrecer una solución práctica, ecológica y accesible que promueve la autonomía, alivie la carga familiar y fomente el uso de energías limpias.
+        El prototipo se encuentra en desarrollo y continuará perfeccionandose para validad su funcionamiento en situaciones reales. 
+      </p>
+    </div>
+  </main>
+
+
+  <style>
+    /* Estilos básicos */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-button {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    function toggleDropdown() {
+      document.getElementById("dropdownMenu").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropdown-button')) {
+        const dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+          const openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+
+  <script src="EcoMove.js"></script>
+
+  <footer>
+    &copy; 2025 EcoMove. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>EcoMove</title>
+  <script>
+    function abrirSeccion(seccion) {
+      const html = `
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+          <meta charset="UTF-8" />
+          <title>${contenido[seccion].titulo}</title>
+          <style>
+            body { font-family: Arial; padding: 20px; background-color: #f9fbe7; }
+            h1 { color: #2e7d32; }
+            p { font-size: 1.1em; }
+            a { display: inline-block; margin-top: 20px; color: #388e3c; text-decoration: none; }
+          </style>
+        </head>
+        <body>
+          <h1>${contenido[seccion].titulo}</h1>
+          <p>${contenido[seccion].texto}</p>
+          <a href="#" onclick="window.close()">Cerrar pestaña</a>
+        </body>
+        </html>
+      `;
+
+      const nuevaVentana = window.open("", "_blank");
+      nuevaVentana.document.write(html);
+      nuevaVentana.document.close();
+
+    }
+  </script>
+</head>
+<body>
+  <div id="barra">
+    <nav id="nav">
+
+      <div id="logo">
+        <img src="Logo EcoMove sin Fondo.png" style="max-width: 15%; height: auto;" alt="Logo de la organización" />
+      </div>
+      <div id="contenido-dinamico">
+        <ul>
+        <li><a onclick="window.location.href='EcoMove.html'">Inicio</a></li>
+        <li><a onclick="window.location.href='Quienessomos.html'">Quiénes somos</a></li>
+        <li><a onclick="window.location.href='Equipo.html'">Equipo</a></li>
+        <li><a onclick="window.location.href='Etapas.html'">Etapas</a></li>
+        <li><a onclick="window.location.href='Contacto.html'">Contacto</a></li>
+
+        </ul>
+    </div>
+    <input type="text" id="busqueda" placeholder="Buscar" />
+    </nav>
+  </div>
+<style>
+  .bloque {
+    border: none;              
+    outline: none;
+    background-color: #E8F5E9; 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-size: 1em;
+    font-weight: 500;
+    color: #3C8C58;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
+  .bloque:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(9, 227, 118, 0.2);
+  }
+
+  .bloque:focus {
+    outline: none; 
+  }
+</style>
+
+
+  </div>
+
+
+  <div id="titulo">Conoce a EcoMove</div>
+
+  <div id="contenedor-principal">
+    
+    <!-- <div class="bloque" id="mision">
+      <a onclick="window.location.href='Mision.html'">
+        Mision
+      </a>
+    </div> -->
+
+    <button class="bloque" id="mision" onclick="window.location.href='Mision.html'">Mision</button>
+
+     <!--<div class="bloque" id="vision">
+      <a onclick="window.location.href='Vision.html'">
+        Vision
+      </a>
+    </div> -->
+
+    <button class="bloque" id="vision" onclick="window.location.href='Vision.html'">Vision</button>
+
+    
+
+    <button class="bloque" id="valores" onclick="window.location.href='Valores.html'">Valores</button>
+  </div>
+
+  <div id="app"><a href="https://drive.google.com/file/d/10L0wTgFMrJkXZBtgvV4_FWFuPkdrUCzp/view?usp=sharing">APP</a></div>
+
+<footer>
+    &copy; 2025 EcoMove. Todos los derechos reservados.
+</footer>
+
+  <script src="EcoMove.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visión - EcoMove</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #3C8C58;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #E8F5E9;
+      padding: 20px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #3C8C58;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00f320ff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 25px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    main h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #3C8C58;
+      text-align: center;
+    }
+
+    main p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div>
+  <header>
+    <img src="Logo EcoMove sin Fondo.png" style="max-width: 5%; height: auto;" alt="Logo de la organización" />
+    <nav>
+      <ul>
+        <li><a onclick="window.location.href='EcoMove.html'">Inicio</a></li>
+        <li><a onclick="window.location.href='Quienessomos.html'">Quiénes somos</a></li>
+        <li><a onclick="window.location.href='Equipo.html'">Equipo</a></li>
+        <li><a onclick="window.location.href='Etapas.html'">Etapas</a></li>
+        <li><a onclick="window.location.href='Contacto.html'">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <main>
+    <h2>Visión</h2>
+    <p>
+      Nuestra visión es construir un futuro más inclusivo, sostenible y tecnológicamente accesible para todas las personas. 
+      Imaginamos comunidades donde la movilidad no sea un privilegio, sino un derecho garantizado por soluciones innovadoras y ecológicas.
+    </p>
+    <p>
+      Aspiramos a liderar el cambio hacia una sociedad que valore la autonomía, la equidad y el respeto por el medio ambiente. 
+      EcoMove se proyecta como un referente en movilidad sustentable, integrando diseño, tecnología y conciencia social.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 EcoMove. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

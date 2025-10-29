@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equipo - EcoMove</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #3C8C58;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #E8F5E9;
+      padding: 20px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+      color: #3C8C58;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 25px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    main h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #3C8C58;
+      text-align: center;
+    }
+
+    .miembros {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .persona {
+      background-color: #E8F5E9;
+      padding: 20px;
+      border-radius: 12px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .persona:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(9, 227, 118, 0.2);
+    }
+
+    .persona img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .persona h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2em;
+      color: #3C8C58;
+    }
+
+    .persona p {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+    
+  </style>
+
+</head>
+<body>
+
+<div id="barra">
+    <nav id="nav">
+
+      <div id="logo">
+        <img src="Logo EcoMove sin Fondo.png" style="max-width: 15%; height: auto;" alt="Logo de la organización" />
+      </div>
+      <div id="contenido-dinamico">
+        <ul>
+        <li><a onclick="window.location.href='EcoMove.html'">Inicio</a></li>
+        <li><a onclick="window.location.href='Quienessomos.html'">Quiénes somos</a></li>
+        <li><a onclick="window.location.href='Equipo.html'">Equipo</a></li>
+        <li><a onclick="window.location.href='Etapas.html'">Etapas</a></li>
+        <li><a onclick="window.location.href='Contacto.html'">Contacto</a></li>
+
+        </ul>
+    </div>
+    <input type="text" id="busqueda" placeholder="Buscar" />
+    </nav>
+  </div>
+
+  <main>
+    <h2>Equipo</h2>
+    <div class="miembros">
+  <div class="persona">
+    <img src="Abril.jpg" alt="Foto Abril" />
+    <h3>Abril</h3>
+    <ul>
+      <li>Cerebro</li>
+      <li>Coordinadora</li>
+      <li>Implementadora</li>
+      <li>Especialista</li>
+    </ul>
+  </div>
+
+  <div class="persona">
+    <img src="Lola.jpg" alt="Foto Lola" />
+    <h3>Lola</h3>
+    <ul>
+      <li>Impulsor</li>
+      <li>Monitor Evaluador</li>
+      <li>Cerebro</li>
+      <li>Coordinadora</li>
+    </ul>
+  </div>
+
+  <div class="persona">
+    <img src="Anto.jpg" alt="Foto Anto" />
+    <h3>Anto</h3>
+    <ul>
+      <li>Cerebro</li>
+      <li>Investigador de Recursos</li>
+      <li>Cohesionador</li>
+      <li>Finalizadora</li>
+    </ul>
+  </div>
+
+  <div class="persona">
+    <img src="Misa.jpg" alt="Foto Misa" />
+    <h3>Misa</h3>
+    <ul>
+      <li>Implementador</li>
+      <li>Coordinador</li>
+    </ul>
+  </div>
+
+  <div class="persona">
+    <img src="Dylan.jpg" alt="Foto Dylan" />
+    <h3>Dylan</h3>
+    <ul>
+      <li>Investigador de Recursos</li>
+      <li>Especialista</li>
+    </ul>
+  </div>
+</div>
+  </main>
+  <script src="EcoMove.js"></script>
+  <footer>
+    &copy; 2025 EcoMove. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
